@@ -2,10 +2,19 @@
   "name": "taskflow-todo-app",
   "version": "1.0.0",
   "description": "TaskFlow - Modern Full-Stack To-Do Application (Node.js, Express, MongoDB, Vanilla HTML/CSS/JS)",
+  "main": "api/index.js",
   "scripts": {
-    "postinstall": "cd backend && npm install",
-    "start": "cd backend && node server.js",
-    "dev": "cd backend && npx nodemon server.js"
+    "start": "node backend/server.js",
+    "dev": "cd backend && nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   },
   "keywords": ["taskflow", "todo", "nodejs", "express", "mongodb"],
   "author": "Prasham Jain",
